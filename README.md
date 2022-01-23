@@ -2,6 +2,9 @@
 
 SoundCloud parser receives data from Soundcloud site using a artist link.
 
+Source code:
+[SoundCloudParser.php](src/Service/SoundCloudParser.php)
+
 # Requirements
 - PHP >= 8
 - Docker
@@ -36,11 +39,6 @@ source .env && symfony server:start --no-tls
 7. Search user
 http://127.0.0.1:8000/?link=https://soundcloud.com/birocratic
    ![](https://i.imgur.com/8xyXrda.png)
-
-# Source code
-```shell
-App\src\Service SoundCloudParser.php
-```
 
 # Run Tests
 ```shell
