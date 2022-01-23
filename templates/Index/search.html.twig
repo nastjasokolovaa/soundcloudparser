@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<table>
+    {% for track in tracks %}
+        <tr>
+            <td><b>{{ track.artist.fullName }}</b></td>
+            <td>{{ track.title }}</td>
+            <td>{{ (track.duration//1000)|date('i:s', '+00:00 GMT') }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
