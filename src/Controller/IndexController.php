@@ -41,9 +41,6 @@ class IndexController extends AbstractController
         if (!$artist) {
             throw new HttpException(404, 'artist not found in db');
         }
-//        var_dump($artist->getTracks()->count());
-//        die;
-//        dump($artist);
 
         return $this->render('Index/search.html.twig', [
             'tracks' => $artist->getTracks(),
